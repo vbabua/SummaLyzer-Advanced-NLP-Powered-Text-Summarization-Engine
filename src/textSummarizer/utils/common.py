@@ -9,7 +9,7 @@ from box import ConfigBox
 from pathlib import Path
 from typing import Any, List, Union
 
-@ensure_annotations
+
 def read_yaml(path_to_yaml: Path) -> Union[ConfigBox, None]:
     """
     Reads a YAML file and returns its contents in a ConfigBox format.
@@ -49,7 +49,7 @@ def read_yaml(path_to_yaml: Path) -> Union[ConfigBox, None]:
         raise e  # Re-raise the caught exception after logging
 
 
-@ensure_annotations
+
 def create_directories(path_to_directories: List[Path], verbose: bool = True) -> None:
     """
     Create directories based on a list of specified paths.
@@ -70,7 +70,7 @@ def create_directories(path_to_directories: List[Path], verbose: bool = True) ->
 
 
 
-@ensure_annotations
+
 def get_size(path: Path) -> str:
     """
     Get the size of a specified file in kilobytes (KB).
